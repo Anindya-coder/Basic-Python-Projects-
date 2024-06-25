@@ -10,6 +10,12 @@ def celsius_to_kelvin(celsius):
 def kelvin_to_celsius(kelvin):
     return kelvin - 273
 
+def fahrenheit_to_kelvin(fahrenheit):
+    return ((5/9) * (fahrenheit - 32)) + 273
+
+def kelvin_to_fahrenheit(kelvin):
+    return ((9/5) * (kelvin - 273)) + 32
+
 def main():
     while True:
         print("Temperature Converter")
@@ -17,6 +23,8 @@ def main():
         print("2: Fahrenheit to celsius")
         print("3: Celsius to Kelvin")
         print("4: Kelvin to celsius")
+        print("5: fahrenheit to kelvin")
+        print("6: Kelvin to fahrenheit")
         print("q: to quit")
 
         choice = input("Choice an option").strip().lower()
@@ -57,8 +65,27 @@ def main():
             except ValueError:
                 print("Enter a valid number")
 
+        if choice == "5":
+            temp = float(input("Enter your temperature in fahrenheit"))
+            try:
+                fahrenheit = temp
+                kelvin = fahrenheit_to_kelvin(fahrenheit)
+                print(f"your temperature is {kelvin} kelvin")
+            except ValueError:
+                print("Enter a valid number")
+
+        if choice == "6":
+            temp = float(input("Enter your temperature in kelvin"))
+            try:
+                kelvin = temp
+                fahrenheit = kelvin_to_fahrenheit(kelvin)
+                print(f"your temperature is {fahrenheit} fahrenheit")
+            except ValueError:
+                print("Enter a valid number")
+
         elif choice == "q":
             break
+
 
         else:
             print("Enter a valid number")
@@ -69,13 +96,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-        
-
-
-                
