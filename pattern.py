@@ -1,7 +1,7 @@
 #outer loop defines the number of lines 
 #inner loop defines the number of elemes in each line
 
-#patter 1
+#pattern 1
 #*****
 #*****
 #*****
