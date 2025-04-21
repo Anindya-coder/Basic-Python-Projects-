@@ -159,3 +159,70 @@ for i in range(4):
     for j in range(i):
         print(i-j,end=' ')
     print()
+
+#pattern 13 (diamond)
+i,j=0,0
+for i in range(4):
+    for j in range(4-i-1):
+        print(' ',end='')
+    for j in range(2*i+1):
+        print('*',end='')
+    print()
+for i in range(4):
+    for j in range(i):
+        print(' ',end='')
+    for j in range(2*(4-i)-1):
+        print('*',end='')   
+    print()
+
+#pattern 14 (double-sided arrowhead patter / double hourglass pattern)
+i,j=0,0 
+for i in range(4):
+    for j in range(i):
+       print(end='')
+    for j in range(2*(4-i)+1):
+       print('*',end='')
+    print()
+for i in range(4):
+    for j in range(4-i-2):
+        print(end='')
+    for j in range(2*i+2):
+        print('*',end='')
+    print()
+
+#pattern 15(hourglass pattern)    
+i,j=0,0 
+for i in range(4):
+    for j in range(i):
+       print(' ',end='')
+    for j in range(2*(4-i)-1):
+       print('*',end='')
+    print()
+for i in range(1,4):
+    for j in range(4-i-1):
+        print(' ',end='')
+    for j in range(2*i+2):
+        print('*',end='')
+    print()
+
+#pattern 16 
+#10 9 8 7 
+#6 5 4 
+#3 2 
+#1 
+i,j=0,0
+num=10
+for i in range(4):
+    for j in range(4-i):
+        print(num,end=' ')
+        num-=1
+    print()
+
+#pattern 17
+i,j=0,0
+for i in range(4):
+    for j in range(4-i-1):
+        print(' ',end='')
+    for j in range(i+1):
+        print('*',end='')
+    print()
