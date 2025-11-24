@@ -27,7 +27,7 @@ for i in range(3):
     print()
 
 #pattern 3 
-#A B c D 
+#A B C D 
 #E F G H 
 #I J K L
 #M N O P
